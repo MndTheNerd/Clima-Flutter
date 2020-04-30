@@ -2,6 +2,7 @@ import 'package:clima/services/networking.dart';
 import 'package:flutter/material.dart';
 import 'package:clima/services/location.dart';
 import 'location_screen.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 const apiKey = '22e21a7ab6b0906bc6ca9e022e3ebf29';
 
@@ -40,6 +41,13 @@ class _LoadingScreenState extends State<LoadingScreen> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: SpinKitDoubleBounce(
+          color: Colors.white,
+          size: 100.0,
+        ),
+      ),
+    );
   }
 }
