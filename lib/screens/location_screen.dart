@@ -14,10 +14,9 @@ class LocationScreen extends StatefulWidget {
 class _LocationScreenState extends State<LocationScreen> {
 
   WeatherModel weather = WeatherModel();
-  double temp;
-  int intTemp;
-  //int conditionID;
-  String  cityName;
+  var temp;
+  var intTemp;
+  String cityName;
   String weatherIcon;
   String weatherMessage;
 
